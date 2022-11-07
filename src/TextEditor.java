@@ -121,6 +121,7 @@ public class TextEditor extends JFrame implements ActionListener {
 					fileIn = new Scanner(file);
 					
 					if (file.isFile()) {
+						textWritingArea.setText("");
 						while (fileIn.hasNextLine()) {
 							String line = fileIn.nextLine() + "\n";
 							textWritingArea.append(line);
